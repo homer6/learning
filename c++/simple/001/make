@@ -1,0 +1,1 @@
+g++ -o encrypt -ggdb -Wall main.cc

@@ -1,0 +1,12 @@
+
+
+# add the MathFunctions library?
+#
+if (USE_MYMATH)
+  include_directories ("${PROJECT_SOURCE_DIR}/MathFunctions")
+  add_subdirectory (MathFunctions)
+  set (EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
+endif (USE_MYMATH)
+
+install (TARGETS MathFunctions DESTINATION bin)
+install (FILES MathFunctions.h DESTINATION include)
